@@ -74,6 +74,6 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     }
 ]
