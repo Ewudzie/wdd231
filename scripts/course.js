@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -97,19 +97,7 @@ function displayCourses(filter = 'all') {
         const courseCard = document.createElement('article');
         courseCard.className = `course${course.completed ? ' completed' : ''}`;
         courseCard.textContent = `${course.subject} ${course.number}`;
-        courseCard.setAttribute(
-            'aria-label',
-            `${course.subject} ${course.number}: ${course.completed ? 'Completed' : 'Not completed'}`
-        );
         courseCard.title = `${course.title} - ${course.credits} credits`;
-
-        if (course.completed) {
-            const completionStatus = document.createElement('span');
-            completionStatus.className = 'completion-status';
-            completionStatus.textContent = 'Completed';
-            courseCard.appendChild(completionStatus);
-        }
-
         courseContainer.appendChild(courseCard);
     });
 
