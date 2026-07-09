@@ -7,6 +7,9 @@
     <meta name="description" content="WDD 231 course home page for Edwin Ewudzie with profile information, course filters, and certificate progress.">
     <meta name="author" content="Edwin Ewudzie">
     <title>WDD 231 - Edwin Ewudzie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -47,17 +50,18 @@
 
             <section class="card photo-card">
                 <h2>Student Photo</h2>
-                <img src="images/me.jpg" alt="Portrait of Edwin Ewudzie" width="320" height="320">
+                <img src="images/edwin_ewudzie.jpg" alt="Portrait of Edwin Ewudzie" width="320" height="320">
             </section>
         </div>
 
         <section class="card courses-card">
             <h2>Web Certificate Courses</h2>
-            <div class="filters" aria-label="Course filters">
+            <fieldset class="filters">
+                <legend>Course filters</legend>
                 <button id="allBtn" type="button">All</button>
                 <button id="cseBtn" type="button">CSE</button>
                 <button id="wddBtn" type="button">WDD</button>
-            </div>
+            </fieldset>
             <div id="certificate-section" class="course-list" aria-live="polite"></div>
             <p id="credit-total" class="credit-total"></p>
         </section>
