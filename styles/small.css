@@ -97,8 +97,7 @@ header {
 }
 
 .navigation a:hover,
-.navigation a:focus-visible,
-.navigation a.active {
+.navigation a:focus-visible {
     background-color: var(--brand-light);
 }
 
