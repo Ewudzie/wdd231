@@ -1,81 +1,51 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@media screen and (min-width: 700px) {
+    header {
+        padding-inline: 0.5rem;
+    }
 
-h1 {
-	font-size: 1.5rem;
-	font-weight: 700;
-	background-color: rgb(70 83 107 / 50%);
-	padding: 1rem;
-	border: 1px solid rgb(0 0 0 / 10%);
-	text-align: center;
-	font-family: Acme, sans-serif;
-}
+    .hamburger {
+        display: none;
+    }
 
-nav {
-	background-color: rgb(70 83 107 / 100%);
-	margin: 0 auto;
-	max-width: 800px;
-	font-family: sans-serif;
-}
-nav ul {
-	list-style-type: none;
-}
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-}
+    .navigation {
+        display: block;
+    }
 
-nav a:hover {
-	text-decoration: overline;
-}
-
-.active {
-	color: yellow;
-}
-
-p {
-	margin: 1rem auto;
-	width: fit-content;
-	font-family: Acme, sans-serif;
-}
-
-/* Larger Views ******************************/
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
-
-	h1 {
-		font-size: 2rem;
-	}
-	p {
-		font-size: larger;
-	}
-}
-
-
-
-
-
-
-
-@media (min-width:640) {
-    nav ul{
+    .navigation ul {
         display: flex;
-        /*justify-content: space-evenly;*/
-
     }
-    nav ul li {
-     flex: 1 1 100%; 
+
+    .navigation li {
+        flex: 0 1 auto;
+    }
+
+    .navigation a {
+        min-width: 9rem;
+        border-top: 0;
+        border-right: 1px solid #111827;
+        text-align: center;
+    }
+
+    main {
+        padding-inline: 0.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    .about-card p {
+        min-height: 10rem;
+        font-size: 1rem;
+    }
+
+    .photo-card img {
+        width: min(70%, 220px);
+        margin-block: 1rem;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-

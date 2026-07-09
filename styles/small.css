@@ -1,24 +1,234 @@
-nav {
-    background-color:aquamarine ;
-    margin: 0 auto;
-    max-width: 800px;
+:root {
+    --ink: #1b1d21;
+    --panel: #eeeeee;
+    --panel-deep: #d8d8d8;
+    --brand: #1f242b;
+    --brand-light: #334155;
+    --accent: #14532d;
+    --border: #9ca3af;
+    --page: #ffffff;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header,
+main,
+footer {
+    width: min(100%, 960px);
+    margin: 0 auto;
+}
+
+header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
 }
-nav ul {
-    list-style-type: none;
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
-nav a{
+
+.site-branding img {
+    width: 54px;
+    height: 54px;
+    padding: 0.35rem;
+    border: 1px solid var(--border);
+}
+
+.hamburger {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--border);
+    background-color: #f3f4f6;
+    color: var(--ink);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.hamburger.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: none;
+    width: min(100%, 960px);
+    margin: 0 auto;
+    background-color: var(--brand);
+}
+
+.navigation.show {
     display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.85rem 1rem;
+    border-top: 1px solid #111827;
+    color: #ffffff;
+    font-weight: 700;
     text-decoration: none;
 }
-nav a:hover{
-    border: 1px solid #fff;
+
+.navigation a:hover,
+.navigation a:focus-visible,
+.navigation a.active {
+    background-color: var(--brand-light);
 }
 
-.active {
-    color: yellow;
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0 0 0.75rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid var(--border);
+    background-color: var(--panel);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: var(--brand);
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.about-card p {
+    min-height: 17rem;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.05rem;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.photo-card img {
+    width: min(72%, 320px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 1.25rem auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.courses-card {
+    margin-top: 1rem;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 0.75rem 0.5rem;
+}
+
+.filters button {
+    min-height: 44px;
+    border: 2px solid #6b7280;
+    border-radius: 6px;
+    background-color: var(--panel-deep);
+    color: var(--ink);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filters button:hover,
+.filters button:focus-visible,
+.filters button.active-filter {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+}
+
+.course-list {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.course {
+    padding: 0.5rem;
+    border: 1px solid #6b7280;
+    background-color: #cfcfcf;
+    text-align: center;
+    font-weight: 700;
+}
+
+.course.completed {
+    background-color: #dbeafe;
+    border-color: #1d4ed8;
+}
+
+.credit-total {
+    margin: 0;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--panel-deep);
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.social a {
+    display: inline-flex;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+}
+
+footer p {
+    margin: 0.25rem 0;
 }

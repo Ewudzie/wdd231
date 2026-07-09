@@ -4,71 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Web Frontend Development I</title>
-    
-    <!--JavaScript files-->
-    <script src="navigation.js" defer></script>
-    <script src="date.js" defer></script>
-    <script src="course.js" defer></script>
+    <meta name="description" content="WDD 231 course home page for Edwin Ewudzie with profile information, course filters, and certificate progress.">
+    <meta name="author" content="Edwin Ewudzie">
+    <title>WDD 231 - Edwin Ewudzie</title>
     <link rel="stylesheet" href="styles/normalize.css">
-
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to Cape Champers</h1>
-    <img src="images/home.svg" alt="Site Logo" width="512" height="512">
-    <span>Edwin's site Title</span>
-    <button id="ham-btn" class="hamburger">Menu</button>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#Chamber">Chamber</a></li>
-      <li><a href="#Final">Final</a></li>
-      <li><a href="#GitHub">GitHub Profile</a></li>
-      <li><a href="#LinkedIn">LinkedIn</a></li>
+    <header>
+        <div class="site-branding">
+            <img src="images/home.svg" alt="" width="64" height="64">
+            <span>Edwin Ewudzie</span>
+        </div>
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu"></button>
+    </header>
 
-    </ul>
-  </nav>
-  <main>
-    <section id="course-content">
-      <h2>Cape Chambers</h2>
-      <!-- Course content populated by course.js -->
-    </section>
-    <section>
-      <h2></h2>
-    </section>
-    <section>
-      <h2></h2>
-    </section>
-  </main>
+    <nav id="nav-menu" class="navigation" aria-label="Primary navigation">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
 
-  <div class="filters">
-  <button id="allBtn">All Courses</button>
-  <button id="wddBtn">WDD Courses</button>
-  <button id="cseBtn">CSE Courses</button>
-</div>
+    <main>
+        <h1>Home</h1>
 
-<p id="credit-total"></p>
+        <div class="home-grid">
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <p>
+                    My name is Edwin Ewudzie. I am studying web frontend development and building skills in HTML, CSS,
+                    JavaScript, accessibility, responsive design, and practical web standards. I enjoy learning how
+                    thoughtful design and clean code work together to create useful websites.
+                </p>
+            </section>
 
-<section id="certificate-section" class="course-list"></section>
-<script src="scripts/navigation.js"></script>
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <img src="images/me.jpg" alt="Portrait of Edwin Ewudzie" width="320" height="320">
+            </section>
+        </div>
 
+        <section class="card courses-card">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters" aria-label="Course filters">
+                <button id="allBtn" type="button">All</button>
+                <button id="cseBtn" type="button">CSE</button>
+                <button id="wddBtn" type="button">WDD</button>
+            </div>
+            <div id="certificate-section" class="course-list" aria-live="polite"></div>
+            <p id="credit-total" class="credit-total"></p>
+        </section>
+    </main>
 
-
-
-  <footer>
-     <p>© 🐧Edwin Ewudzie 🐧 Accra, Ghana
-            <span id="currentyear"></span>
-      </p>
-      <p>
-            <span id="lastModified"></span>
-      </p>
-  </footer>
-    <h1>WDD231 - Edwin</h1>
-
-    <!--hshasakshhash-->
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/edwinewudzie" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://github.com/edwinewudzie" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            </a>
+            <a href="https://teams.microsoft.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/microsoft-teams.svg" alt="Microsoft Teams" width="48" height="48">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Edwin Ewudzie • Accra, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

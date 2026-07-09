@@ -78,4 +78,41 @@ const courses = [
     }
 ]
 
+const courseContainer = document.querySelector('#certificate-section');
+const creditTotal = document.querySelector('#credit-total');
+const filterButtons = {
+    all: document.querySelector('#allBtn'),
+    CSE: document.querySelector('#cseBtn'),
+    WDD: document.querySelector('#wddBtn')
+};
+
+function displayCourses(filter = 'all') {
+    const filteredCourses = filter === 'all'
+        ? courses
+        : courses.filter((course) => course.subject === filter);
+
+    courseContainer.innerHTML = '';
+
+    filteredCourses.forEach((course) => {
+        const courseCard = document.createElement('article');
+        courseCard.className = `course${course.completed ? ' completed' : ''}`;
+        courseCard.textContent = `${course.subject} ${course.number}`;
+        courseCard.title = `${course.title} - ${course.credits} credits`;
+        courseContainer.appendChild(courseCard);
+    });
+
+    const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+    creditTotal.textContent = `The total credits for course listed above is ${totalCredits}`;
+
+    Object.entries(filterButtons).forEach(([key, button]) => {
+        button.classList.toggle('active-filter', key === filter);
+        button.setAttribute('aria-pressed', key === filter);
+    });
+}
+
+filterButtons.all.addEventListener('click', () => displayCourses('all'));
+filterButtons.CSE.addEventListener('click', () => displayCourses('CSE'));
+filterButtons.WDD.addEventListener('click', () => displayCourses('WDD'));
+
+displayCourses();
 
