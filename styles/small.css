@@ -221,6 +221,7 @@ footer {
 
 .social a {
     display: inline-flex;
+    color: var(--ink);
 }
 
 .social img {
