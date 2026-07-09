@@ -102,6 +102,11 @@ header {
     background-color: var(--brand-light);
 }
 
+.navigation a.active {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
 main {
     padding: 1rem;
 }
