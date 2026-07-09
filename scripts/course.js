@@ -97,7 +97,19 @@ function displayCourses(filter = 'all') {
         const courseCard = document.createElement('article');
         courseCard.className = `course${course.completed ? ' completed' : ''}`;
         courseCard.textContent = `${course.subject} ${course.number}`;
+        courseCard.setAttribute(
+            'aria-label',
+            `${course.subject} ${course.number}: ${course.completed ? 'Completed' : 'Not completed'}`
+        );
         courseCard.title = `${course.title} - ${course.credits} credits`;
+
+        if (course.completed) {
+            const completionStatus = document.createElement('span');
+            completionStatus.className = 'completion-status';
+            completionStatus.textContent = 'Completed';
+            courseCard.appendChild(completionStatus);
+        }
+
         courseContainer.appendChild(courseCard);
     });
 
