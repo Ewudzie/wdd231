@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #1f2130;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #4f5797;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    line-height: 1.05;
+    text-align: center;
+}
+
+main {
+    width: min(100%, 860px);
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #e5e5e8;
+    box-shadow: 0 0 28px #555555;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    gap: 4px;
+}
+
+section {
+    min-height: 250px;
+    padding: 0.75rem 0.5rem 0.45rem;
+    border: 1px solid #6970ad;
+    background-color: #babacf;
+    text-align: center;
+}
+
+section h2 {
+    margin: 0 0 0.65rem;
+    color: #4f5797;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    text-shadow: 1px 1px 2px rgb(79 87 151 / 35%);
+}
+
+section p {
+    margin: 0.15rem 0;
+    font-size: 0.72rem;
+    line-height: 1.25;
+}
+
+section img {
+    display: block;
+    width: 118px;
+    height: 158px;
+    margin: 0.55rem auto 0;
+    object-fit: cover;
+    box-shadow: 0 0 14px #333333;
+}
+
+footer {
+    width: min(100%, 860px);
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}

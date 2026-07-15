@@ -116,3 +116,19 @@ filterButtons.WDD.addEventListener('click', () => displayCourses('WDD'));
 
 displayCourses();
 
+//Ward information for members week02
+/*{
+    "familyName": "Ewudzie",
+    "dateMovedIn": "2023-01-15",
+    "numberOfMembers": 5,
+    "visitedByBishop": true,
+    "individuals": [
+        {"name": "Edwin Kobina Ewudzie", "gender": "male", "birthDate": "1993-06-15", "relationship": "Head of Household", "baptized": true, "active": true},
+        {"name": "Adwoa Danso Ewudzie", "gender": "female", "birthDate": "1994-08-20", "relationship": "Spouse", "baptized": true, "active": true},
+        {"name": "Eliza Ewudzie", "gender": "female", "birthDate": "2000-05-10", "relationship": "Child", "baptized": true, "active": true},
+        {"name": "Edwin Kojo Ewudzie", "gender": "male", "birthDate": "2003-09-12", "relationship": "Child", "baptized": true, "active": true},
+        {"name": "Pheobe-Sofia Ewudzie", "gender": "female", "birthDate": "2005-11-25", "relationship": "Child", "baptized": true, "active": true}
+    ]
+
+
+}*/
