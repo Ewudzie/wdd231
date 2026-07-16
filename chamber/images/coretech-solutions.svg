@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-label="CoreTech Solutions logo">
+  <rect width="240" height="140" rx="18" fill="#005f73"/>
+  <rect x="28" y="24" width="184" height="92" rx="12" fill="#f7fcff"/>
+  <rect x="52" y="38" width="48" height="48" rx="8" fill="#f4b400"/>
+  <rect x="112" y="38" width="76" height="12" rx="6" fill="#005f73"/>
+  <rect x="112" y="60" width="56" height="12" rx="6" fill="#1f6fb2"/>
+  <text x="120" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#005f73">CoreTech</text>
+</svg>

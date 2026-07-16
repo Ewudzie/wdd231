@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-label="Zentech College logo">
+  <rect width="240" height="140" rx="18" fill="#4e2a84"/>
+  <rect x="28" y="28" width="184" height="84" rx="14" fill="#f5f2ff"/>
+  <path d="M60 78V50l60-20 60 20v28" fill="none" stroke="#4e2a84" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="84" y="60" width="72" height="24" rx="6" fill="#f4b400"/>
+  <path d="M70 88h100" stroke="#4e2a84" stroke-width="10" stroke-linecap="round"/>
+  <text x="120" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#4e2a84">Zentech</text>
+</svg>

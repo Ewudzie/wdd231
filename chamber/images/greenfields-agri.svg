@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-label="GreenFields Agriculture logo">
+  <rect width="240" height="140" rx="18" fill="#3a7d20"/>
+  <rect x="24" y="24" width="192" height="92" rx="14" fill="#f8fff2"/>
+  <path d="M70 92c16-34 38-50 66-50 24 0 37 14 44 33" fill="none" stroke="#3a7d20" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="88" cy="74" r="12" fill="#f4b400"/>
+  <text x="120" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#3a7d20">GreenFields</text>
+</svg>

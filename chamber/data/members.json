@@ -1,0 +1,86 @@
+[
+  {
+    "companyName": "Corenet IT Limited",
+    "addresses": ["Jungle Close, Accra"],
+    "phone": "+233302725453",
+    "email": "info@corenetit.com",
+    "website": "https://corenetit.example.com",
+    "image": "images/corenet-it-limited.svg",
+    "membershipLevel": 2,
+    "tagline": "IT service & computer repair",
+    "description": "Computer repair, managed IT services and on-site support.",
+    "hours": "Mon-Fri 08:00-17:00"
+  },
+  {
+    "companyName": "Perfect Business Services Ltd",
+    "addresses": ["La Road, Accra"],
+    "phone": "+233302778859",
+    "email": "contact@perfectbusiness.example.com",
+    "website": "https://perfectbusiness.example.com",
+    "image": "images/perfect-business-services.svg",
+    "membershipLevel": 1,
+    "tagline": "IT service & computer repair",
+    "description": "Small business IT support and training.",
+    "hours": "Mon-Fri 09:00-17:00"
+  },
+  {
+    "companyName": "Techland IT Solutions Limited",
+    "addresses": ["Accra, Ghana"],
+    "phone": "+233302280388",
+    "email": "hello@techland.example.com",
+    "website": "https://techland.example.com",
+    "image": "images/techland-it-solutions.svg",
+    "membershipLevel": 3,
+    "tagline": "Software development",
+    "description": "Custom software, web and mobile applications.",
+    "hours": "Mon-Fri 08:30-18:00"
+  },
+  {
+    "companyName": "Zentech College Of Technology",
+    "addresses": ["Abeka Road, Accra"],
+    "phone": "+233302268650",
+    "email": "admissions@zentech.example.com",
+    "website": "https://zentech.example.com",
+    "image": "images/zentech-college.svg",
+    "membershipLevel": 3,
+    "tagline": "Education",
+    "description": "Technical and vocational training institution.",
+    "hours": "Mon-Sat 08:00-17:00"
+  },
+  {
+    "companyName": "CoreTech Solutions",
+    "addresses": ["Tema Industrial Area, Tema"],
+    "phone": "+233303334400",
+    "email": "sales@coretech.example.com",
+    "website": "https://coretech.example.com",
+    "image": "images/coretech-solutions.svg",
+    "membershipLevel": 2,
+    "tagline": "Enterprise IT & cloud services",
+    "description": "Cloud migration, cybersecurity and enterprise support.",
+    "hours": "Mon-Fri 09:00-18:00"
+  },
+  {
+    "companyName": "GreenFields Agriculture Ltd",
+    "addresses": ["Kumasi, Ashanti Region"],
+    "phone": "+233322123456",
+    "email": "info@greenfields.example.com",
+    "website": "https://greenfields.example.com",
+    "image": "images/greenfields-agri.svg",
+    "membershipLevel": 1,
+    "tagline": "Fresh produce & agribusiness",
+    "description": "Farm-to-market supply of fruits and vegetables.",
+    "hours": "Mon-Sun 06:00-16:00"
+  },
+  {
+    "companyName": "OceanView Travel",
+    "addresses": ["Cantonments, Accra"],
+    "phone": "+233302998877",
+    "email": "bookings@oceanviewtravel.example.com",
+    "website": "https://oceanviewtravel.example.com",
+    "image": "images/oceanview-travel.svg",
+    "membershipLevel": 2,
+    "tagline": "Travel agency & tour operator",
+    "description": "Domestic and international travel packages.",
+    "hours": "Mon-Fri 08:30-17:00; Sat 09:00-13:00"
+  }
+]

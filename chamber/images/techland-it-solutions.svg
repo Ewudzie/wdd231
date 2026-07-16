@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-label="Techland IT Solutions logo">
+  <rect width="240" height="140" rx="18" fill="#1e3a5f"/>
+  <rect x="28" y="28" width="184" height="84" rx="12" fill="#f8f9fb"/>
+  <path d="M68 94V48l26 23 26-23v46" fill="none" stroke="#1f6fb2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 56h46" stroke="#f4b400" stroke-width="10" stroke-linecap="round"/>
+  <path d="M128 78h34" stroke="#f4b400" stroke-width="10" stroke-linecap="round"/>
+  <text x="120" y="109" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1e3a5f">Techland</text>
+</svg>

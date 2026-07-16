@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-label="Corenet IT Limited logo">
+  <rect width="240" height="140" rx="18" fill="#0f2742"/>
+  <rect x="24" y="24" width="192" height="92" rx="14" fill="#f4f4f4"/>
+  <circle cx="80" cy="70" r="28" fill="#f4b400"/>
+  <path d="M74 58h26v24H74z" fill="#0f2742"/>
+  <path d="M104 58h14v24h-14z" fill="#1f6fb2"/>
+  <text x="120" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2742">Corenet</text>
+</svg>
