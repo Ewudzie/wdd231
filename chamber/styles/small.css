@@ -103,6 +103,51 @@ h1 {
     list-style: none;
 }
 
+.business-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.business-grid.list-view .business-card {
+    display: grid;
+    grid-template-columns: minmax(120px, 180px) 1fr;
+    align-items: start;
+}
+
+.business-grid.list-view .business-card__image {
+    height: 100%;
+    min-height: 160px;
+}
+
+.business-grid.list-view .business-card h2,
+.business-grid.list-view .business-card .tagline,
+.business-grid.list-view .business-card .business-info,
+.business-grid.list-view .business-card .business-description,
+.business-grid.list-view .business-card .card-actions {
+    grid-column: 2;
+}
+
+.business-grid.list-view .business-card h2 {
+    text-align: left;
+    padding: 0.8rem 0.8rem 0;
+}
+
+.business-grid.list-view .business-card .tagline {
+    text-align: left;
+    padding: 0.2rem 0.8rem 0.45rem;
+}
+
+.business-grid.list-view .business-card .business-info {
+    padding: 0 0.8rem 0.5rem;
+}
+
+.business-grid.list-view .business-card .business-description {
+    padding: 0 0.8rem 0.6rem;
+}
+
+.business-grid.list-view .business-card .card-actions {
+    padding: 0 0.8rem 0.8rem;
+}
+
 .business-card {
     overflow: hidden;
     border-radius: 7px;

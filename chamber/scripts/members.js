@@ -78,6 +78,18 @@ const fallbackMembers = [
   }
 ];
 
+function setView(view) {
+  const grid = document.querySelector("#business-grid");
+  const buttons = document.querySelectorAll(".view-controls button");
+  if (!grid) return;
+
+  grid.classList.toggle("list-view", view === "list");
+  buttons.forEach((button) => {
+    const isActive = button.dataset.view === view;
+    button.classList.toggle("active", isActive);
+  });
+}
+
 function renderMembers(grid, members) {
   const membershipLabels = ["Member", "Silver", "Gold"];
   grid.innerHTML = members
@@ -128,4 +140,9 @@ async function loadMembers() {
   }
 }
 
+document.querySelectorAll(".view-controls button").forEach((button) => {
+  button.addEventListener("click", () => setView(button.dataset.view));
+});
+
+setView("grid");
 loadMembers();
