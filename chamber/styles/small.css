@@ -107,93 +107,118 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+.business-list-row {
+    display: none;
+}
+
 .business-grid.list-view .business-card {
-    display: grid;
-    grid-template-columns: minmax(120px, 180px) 1fr;
-    align-items: start;
+    display: block;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
-.business-grid.list-view .business-card__image {
-    height: 100%;
-    min-height: 160px;
-}
-
+.business-grid.list-view .business-card__image,
 .business-grid.list-view .business-card h2,
 .business-grid.list-view .business-card .tagline,
 .business-grid.list-view .business-card .business-info,
 .business-grid.list-view .business-card .business-description,
 .business-grid.list-view .business-card .card-actions {
-    grid-column: 2;
+    display: none;
 }
 
-.business-grid.list-view .business-card h2 {
-    text-align: left;
-    padding: 0.8rem 0.8rem 0;
+.business-grid.list-view .business-list-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1.2fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background-color: #e8f8ff;
+    border-radius: 12px;
+    border: 1px solid #d7eff8;
 }
 
-.business-grid.list-view .business-card .tagline {
-    text-align: left;
-    padding: 0.2rem 0.8rem 0.45rem;
+.business-list-row div {
+    min-width: 0;
 }
 
-.business-grid.list-view .business-card .business-info {
-    padding: 0 0.8rem 0.5rem;
+.list-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-weight: 600;
+    color: #13394b;
 }
 
-.business-grid.list-view .business-card .business-description {
-    padding: 0 0.8rem 0.6rem;
+.list-tagline {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #4d6571;
 }
 
-.business-grid.list-view .business-card .card-actions {
-    padding: 0 0.8rem 0.8rem;
+.list-address {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #13394b;
+}
+
+.list-phone {
+    font-size: 0.95rem;
+    color: #13394b;
+}
+
+.list-website a {
+    color: #0f2742;
+    text-decoration: none;
+    font-size: 0.95rem;
+    word-break: break-all;
+}
+
+.business-grid.list-view .business-card:not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 
 .business-card {
     overflow: hidden;
-    border-radius: 7px;
-    background-color: #d8d8d8;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eff1f5;
 }
 
 .business-card h2 {
     margin: 0;
-    padding: 0.55rem 0.75rem 0;
-    font-size: clamp(1.1rem, 2vw, 1.45rem);
-    font-weight: 500;
+    padding: 1rem 1rem 0.3rem;
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    font-weight: 700;
     line-height: 1.1;
     text-align: center;
 }
 
 .business-card .tagline {
     margin: 0;
-    padding-bottom: 0.45rem;
-    border-bottom: 1px solid #9a9a9a;
-    font-size: 0.8rem;
+    padding: 0 1rem 0.75rem;
+    border-bottom: none;
+    font-size: 0.95rem;
+    color: #555555;
     text-align: center;
 }
 
 .business-info {
-    display: grid;
-    grid-template-columns: 92px 1fr;
-    gap: 0.8rem;
-    align-items: center;
-    padding: 0.65rem;
+    display: block;
+    padding: 0.75rem 1rem 0.5rem;
 }
 
 .placeholder {
-    display: block;
-    width: 92px;
-    height: 92px;
-    border: 1px solid #555555;
-    background:
-        linear-gradient(45deg, transparent 49%, #666666 50%, transparent 51%),
-        linear-gradient(-45deg, transparent 49%, #666666 50%, transparent 51%),
-        #b8b8b8;
+    display: none;
 }
 
 .business-info p {
-    margin: 0.22rem 0;
-    font-size: clamp(0.72rem, 1.4vw, 0.82rem);
-    line-height: 1.25;
+    margin: 0.2rem 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: #444444;
+    text-align: center;
 }
 
 .business-info strong {
@@ -202,16 +227,19 @@ h1 {
 
 .business-card__image {
     display: block;
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-bottom: 1px solid #9a9a9a;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 1rem auto 0;
+    border-radius: 18px;
+    background-color: #f4f4f4;
+    padding: 12px;
 }
 
 .business-details {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.4rem;
 }
 
 .business-description {

@@ -97,6 +97,9 @@ function renderMembers(grid, members) {
       const addresses = Array.isArray(member.addresses)
         ? member.addresses.join(" • ")
         : member.addresses || "Address available on request";
+      const rowAddresses = Array.isArray(member.addresses)
+        ? member.addresses.join("<br>")
+        : (member.addresses || "Address available on request").replace(/\s*•\s*/g, "<br>");
       const website = member.website || "#";
       const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addresses)}`;
       const membershipLabel = membershipLabels[member.membershipLevel - 1] || "Member";
@@ -106,6 +109,15 @@ function renderMembers(grid, members) {
           <img class="business-card__image" src="${member.image}" alt="${member.companyName} logo" loading="lazy">
           <h2>${member.companyName}</h2>
           <p class="tagline">${member.tagline || ""}</p>
+          <div class="business-list-row">
+            <div class="list-name">
+              <span>${member.companyName}</span>
+              <span class="list-tagline">${member.tagline || ""}</span>
+            </div>
+            <div class="list-address">${rowAddresses}</div>
+            <div class="list-phone">${member.phone || "N/A"}</div>
+            <div class="list-website"><a href="${website}" target="_blank" rel="noreferrer">${website}</a></div>
+          </div>
           <div class="business-info">
             <div class="business-details">
               <p><strong>Address:</strong> ${addresses}</p>
