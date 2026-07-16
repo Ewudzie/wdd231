@@ -253,19 +253,22 @@ h1 {
     display: flex;
     gap: 0.65rem;
     padding: 0 0.75rem 0.8rem;
+    justify-content: center;
+    width: 100%;
 }
 
-.button {
+.card-actions .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 0.45rem 0.7rem;
-    border-radius: 4px;
+    min-width: 0;
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
     background-color: #0f2742;
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .button.secondary {
