@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the TSS Chamber of Commerce member directory, showcasing leading local businesses, services, contact details, and website links for Accra-area companies.">
     <meta name="author" content="Edwin Ewudzie">
-    <meta name="keywords" content="TSS, Chamber of Commerce, Directory, Business Listings">
+    <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed, weather conditions">
     <meta property="og:title" content="Edwin Ewudzie - TSS Chamber of Commerce Directory">
     <meta property="og:description" content="Discover the TSS Chamber of Commerce directory with trusted local members, service details, and quick contact links for businesses across Accra.">
     <meta property="og:image" content="https://ewudzie.github.io/wdd231/chamber/images/favicon.ico">
     <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html">
     <meta name="facebook:card" content="summary_large_image">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Edwin Ewudzie - TSS | Chamber of Commerce Directory</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,23 +18,24 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <title>Weather</title>
 </head>
 <body>
     <div class="page">
         <header>
             <a class="brand" href="index.html" aria-label="TSS Chamber of Commerce home">
                 <img src="images/favicon.ico" alt="TSS favicon" class="brand-image" width="64" height="64">
-                <span>Weather   </span>
+                <span>Weather</span>
             </a>
             <nav aria-label="Primary navigation">
                 <a href="index.html">Home</a>
-                <a class="active" href="directory.html" aria-current="page">Directory</a>
+                <a class="active" href="index.html" aria-current="page">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="discover.html">Discover</a>
                 <button class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
             </nav>
         </header>
-
         <main>
             <h1>Directory</h1>
             <div class="view-controls" role="group" aria-label="Directory display options">
@@ -45,7 +44,29 @@
             </div>
 
             <ul class="business-grid" id="business-grid"></ul>
+
+            <section class="current-events" id="current-events" hidden>
+
+            </section>  
+
+            section class="weather" id="weather" hidden>
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <p id="temperature"></p>
+                    <p id="humidity"></p>
+                    <p id="wind-speed"></p>
+                    <p id="conditions"></p>
+                </div>
+            </section>
         </main>
+
+
+
+
+
+
+
+
 
         <footer>
             <div>
@@ -87,7 +108,6 @@
             </div>
         </footer>
     </div>
-    <script src="scripts/members.js" defer></script>
+    
 </body>
 </html>
-
