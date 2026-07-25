@@ -11,8 +11,8 @@ const apiKey = window.OPENWEATHER_API_KEY; // Use the API key from config.js
 const lat = 5.6037;
 const lon = -0.1870;
 
-const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${window.OPENWEATHER_API_KEY}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${window.OPENWEATHER_API_KEY}`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
 async function apiFetch() {
     if (descriptionEl) {
