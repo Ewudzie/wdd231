@@ -46,13 +46,40 @@
                 </div>
             </section>
 
-            <section class="weather" id="weather" hidden>
-                <h2>Current Weather</h2>
-                <div class="weather-info">
-                    <p id="temperature"></p>
-                    <p id="humidity"></p>
-                    <p id="wind-speed"></p>
-                    <p id="conditions"></p>
+            <section class="info-grid">
+                <article class="info-card events-card">
+                    <h2>Current Events</h2>
+                    <ul>
+                        <li><strong>Business Mixer:</strong> Thursday, 6:00 PM at the Civic Center.</li>
+                        <li><strong>Startup Pitch Night:</strong> Friday, 7:30 PM at the Innovation Hub.</li>
+                        <li><strong>Community Fair:</strong> Saturday, 10:00 AM in the city square.</li>
+                    </ul>
+                </article>
+
+                <article class="info-card weather-card" id="weather">
+                    <h2>Current Weather</h2>
+                    <div class="weather-info">
+                        <p><span class="label">Temperature</span><span id="temperature">24°C</span></p>
+                        <p><span class="label">Humidity</span><span id="humidity">78%</span></p>
+                        <p><span class="label">Wind Speed</span><span id="wind-speed">12 km/h</span></p>
+                        <p><span class="label">Conditions</span><span id="conditions">Partly Cloudy</span></p>
+                    </div>
+                    <div class="forecast-section">
+                        <h3>3-Day Forecast</h3>
+                        <div id="forecast" class="forecast-grid">
+                            <!-- Forecast items injected here -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="spotlights" aria-labelledby="spotlights-title">
+                <div class="section-heading">
+                    <h2 id="spotlights-title">Member Spotlights</h2>
+                    <p>Featured Gold and Silver members chosen at random on every visit.</p>
+                </div>
+                <div id="spotlight-grid" class="spotlight-grid">
+                    <p class="spotlight-loading">Loading spotlight members…</p>
                 </div>
             </section>
         </main>
@@ -105,6 +132,9 @@
             </div>
         </footer>
     </div>
-    
+            <script src="scripts/config.js"></script>
+            <script src="scripts/weather.js" defer></script>
+            <script src="scripts/spotlights.js" defer></script>
+
 </body>
 </html>

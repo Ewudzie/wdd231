@@ -128,6 +128,131 @@ h1 {
     font-size: clamp(1.7rem, 3vw, 2rem);
 }
 
+.info-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.info-card,
+.spotlight-card {
+    padding: 1.1rem 1.2rem;
+    border-radius: 16px;
+    background-color: #f7fbff;
+    border: 1px solid #dce9f3;
+    box-shadow: 0 8px 24px rgba(15, 39, 66, 0.06);
+}
+
+.events-card ul {
+    margin: 0.6rem 0 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.55rem;
+    color: #334b5c;
+}
+
+.weather-card .weather-info {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 0.7rem;
+}
+
+.weather-card .weather-info p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.45rem 0.6rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.forecast-section {
+    margin-top: 0.85rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.forecast-day {
+    padding: 0.55rem;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.forecast-temp {
+    margin: 0.4rem 0 0;
+    font-weight: 700;
+    color: #0f2742;
+}
+
+.weather-card .label {
+    font-weight: 700;
+    color: #0f2742;
+}
+
+.spotlights {
+    margin-top: 0.5rem;
+}
+
+.section-heading {
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 0.25rem;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #556b76;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card h3 {
+    margin: 0 0 0.4rem;
+    color: #0f2742;
+}
+
+.spotlight-logo {
+    display: block;
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    margin: 0 0 0.85rem;
+    border-radius: 12px;
+    background: #ffffff;
+    object-fit: contain;
+}
+
+.spotlight-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.75rem;
+    margin: 0.55rem 0 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 999px;
+    background-color: #0f2742;
+}
+
+.spotlight-card p {
+    margin: 0;
+    color: #4e5f6a;
+    line-height: 1.5;
+}
+
 .view-controls {
     display: flex;
     justify-content: center;

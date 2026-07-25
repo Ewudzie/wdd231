@@ -82,5 +82,17 @@
     "tagline": "Travel agency & tour operator",
     "description": "Domestic and international travel packages.",
     "hours": "Mon-Fri 08:30-17:00; Sat 09:00-13:00"
+  },
+  {
+    "companyName": "Moe's Marketing Hub",
+    "addresses": ["Spintex Road, Accra"],
+    "phone": "+233243112233",
+    "email": "hello@moesmarketing.example.com",
+    "website": "https://moesmarketing.example.com",
+    "image": "images/moes-marketing-hub.svg",
+    "membershipLevel": 1,
+    "tagline": "Digital marketing & branding",
+    "description": "Marketing strategy, social media campaigns, and brand development for growing businesses.",
+    "hours": "Mon-Fri 08:30-18:00"
   }
 ]
