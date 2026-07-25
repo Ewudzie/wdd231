@@ -1,0 +1,18 @@
+[33mcommit 69a619afc39d4f8c53afa46e8de8608d190f3d3b[m
+Author: Ewudzie <eewudzie1@pathway.edu>
+Date:   Fri Jul 24 10:56:17 2026 +0000
+
+    week03 assignment on weather API
+
+ Week03/modules.html         |  41 [32m++++++++++++++++[m
+ Week03/scripts/course.mjs   |   0
+ Week03/scripts/modules.mjs  |  73 [32m++++++++++++++++++++++++++++[m
+ Week03/scripts/output.mjs   |   0
+ Week03/scripts/sections.mjs |   0
+ Week03/styles/modules.css   |  95 [32m+++++++++++++++++++++++++++++++++++++[m
+ chamber/data/weather.json   |   0
+ chamber/directory.html      |  14 [32m+++[m[31m---[m
+ chamber/index.html          | 113 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ openweather.html            |  27 [32m+++++++++++[m
+ scripts/weather.js          |  20 [32m++++++++[m
+ 11 files changed, 376 insertions(+), 7 deletions(-)
