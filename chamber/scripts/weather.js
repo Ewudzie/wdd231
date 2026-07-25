@@ -1,8 +1,8 @@
 
 
     document.addEventListener('DOMContentLoaded', function () {
-        const key = 'fabca6d02e23eb9a1d3ca827963d5047'; // Replace with your actual OpenWeather API key
-        if (!key) {
+        const key = typeof OPENWEATHER_API_KEY !== 'undefined' ? OPENWEATHER_API_KEY : null;
+        if (!key || key === 'REPLACE_WITH_YOUR_KEY') {
             console.warn('OpenWeather API key missing in scripts/config.js; live weather disabled.');
             return;
         }
