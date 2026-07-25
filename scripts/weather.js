@@ -12,9 +12,20 @@ async function apiFetch() {
         const response = await fetch(url);
         const data = await response.json();
         console.log(data);
+        displayResults(data);
     } catch (error) {
         console.error('Error fetching API data:', error);
     }
+}
+
+//Display the JSON data on my web page
+async function displayResults(data) {
+    console.log("hello", data);
+    captionDesc.innerHTML = data.weather[0].description;
+    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
+    weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('loading', 'lazy');
 }
 
 apiFetch();

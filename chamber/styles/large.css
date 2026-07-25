@@ -1,4 +1,17 @@
 @media (min-width: 821px) {
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero-image {
+        min-height: 420px;
+    }
+
+    .hero-banner {
+        inset: auto auto 2rem;
+        padding: 1.4rem 2rem;
+    }
+
     header {
         flex-direction: row;
         align-items: center;

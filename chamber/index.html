@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Edwin Ewudzie">
     <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed, weather conditions">
-    <meta property="og:title" content="Edwin Ewudzie - TSS Chamber of Commerce Directory">
-    <meta property="og:description" content="Discover the TSS Chamber of Commerce directory with trusted local members, service details, and quick contact links for businesses across Accra.">
+    <meta property="og:title" content="Edwin Ewudzie - TSS Chamber of Commerce Home">
+    <meta property="og:description" content="Discover the TSS Chamber of Commerce  members, service details, and more opportunities available for businesses across Accra.">
     <meta property="og:image" content="https://ewudzie.github.io/wdd231/chamber/images/favicon.ico">
     <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html">
     <meta name="facebook:card" content="summary_large_image">
@@ -19,37 +19,34 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <title>Weather</title>
+    <title>Home|Weather</title>
 </head>
 <body>
     <div class="page">
         <header>
-            <a class="brand" href="index.html" aria-label="TSS Chamber of Commerce home">
+            <a class="brand" href="../index.html" aria-label="TSS Chamber of Commerce home">
                 <img src="images/favicon.ico" alt="TSS favicon" class="brand-image" width="64" height="64">
                 <span>Weather</span>
             </a>
             <nav aria-label="Primary navigation">
-                <a href="index.html">Home</a>
-                <a class="active" href="index.html" aria-current="page">Directory</a>
+                <a class="active" href="../index.html" aria-current="page">Home</a>
+                <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="discover.html">Discover</a>
                 <button class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
             </nav>
         </header>
         <main>
-            <h1>Directory</h1>
-            <div class="view-controls" role="group" aria-label="Directory display options">
-                <button class="active" type="button" data-view="grid">Grid</button>
-                <button type="button" data-view="list">List</button>
-            </div>
+            <section class="hero" aria-label="Chamber of Commerce hero">
+                <img src="images/Black_star_sqr.jpg" alt="Decorative chamber hero image" class="hero-image">
+                <div class="hero-banner">
+                    <p class="hero-kicker">TSS Chamber of Commerce</p>
+                    <h2>Welcome to our growing community</h2>
+                    <p>Connect with local businesses, discover opportunities, and join the movement.</p>
+                </div>
+            </section>
 
-            <ul class="business-grid" id="business-grid"></ul>
-
-            <section class="current-events" id="current-events" hidden>
-
-            </section>  
-
-            section class="weather" id="weather" hidden>
+            <section class="weather" id="weather" hidden>
                 <h2>Current Weather</h2>
                 <div class="weather-info">
                     <p id="temperature"></p>
