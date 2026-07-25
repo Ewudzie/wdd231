@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/spotlights.js"></script>
 
     <title>Home|Weather</title>
 </head>
@@ -58,6 +61,10 @@
 
                 <article class="info-card weather-card" id="weather">
                     <h2>Current Weather</h2>
+                    <div class="weather-current">
+                        <img id="weather-icon" src="" alt="Weather icon" class="weather-icon" loading="lazy">
+                        <p id="description">Loading weather description...</p>
+                    </div>
                     <div class="weather-info">
                         <p><span class="label">Temperature</span><span id="temperature">24°C</span></p>
                         <p><span class="label">Humidity</span><span id="humidity">78%</span></p>
@@ -67,7 +74,7 @@
                     <div class="forecast-section">
                         <h3>3-Day Forecast</h3>
                         <div id="forecast" class="forecast-grid">
-                            <!-- Forecast items injected here -->
+                            <p class="forecast-loading">Loading forecast...</p>
                         </div>
                     </div>
                 </article>

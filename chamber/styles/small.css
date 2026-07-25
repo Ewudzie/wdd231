@@ -151,6 +151,29 @@ h1 {
     color: #334b5c;
 }
 
+.weather-card .weather-current {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 0.85rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: 1px solid #dce9f3;
+}
+
+.weather-card .weather-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.weather-card .weather-current p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #0f2742;
+}
+
 .weather-card .weather-info {
     display: grid;
     gap: 0.55rem;
