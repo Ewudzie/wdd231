@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/modal.css">
-    <script src="scripts/modal.js" defer></script>   
+    <link rel="stylesheet" href="styles/modals.css">
+    <script src="scripts/modals.js" defer></script>   
     
     <title>Using modal dialog</title>
 </head>
 <body>
     <main>
         <h1>Using modal dialog</h1>
-        <button id="openModalBtn">More Information</button>
+        <button id="openModalBtn1">Apples</button>
+        <button id="openModalBtn2">Oranges</button>
+        <button id="openModalBtn3">Bananas</button>
         <dialog id="infoModal" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+            <div id="dialogBoxText"></div>
             <h2>Modal Dialog</h2>
             <p>This is the content of the modal dialog.</p>
             <button id="closeModalBtn">Close</button>

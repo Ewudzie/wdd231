@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+
+
+#openModalBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+}
+#openModalBtn:hover {
+  background-color: #45a049;
+}
+
+#dialogBox{
+    background-color: #45a049;
+    
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

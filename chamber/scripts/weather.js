@@ -1,4 +1,4 @@
-// select HTML elements in the document
+/* select HTML elements in the document */
 const currentTemp = document.querySelector('#temperature');
 const humidityEl = document.querySelector('#humidity');
 const windSpeedEl = document.querySelector('#wind-speed');
@@ -7,7 +7,7 @@ const descriptionEl = document.querySelector('#description');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastContainer = document.querySelector('#forecast');
 
-const apiKey = window.OPENWEATHER_API_KEY; // Use the API key from config.js
+const apiKey = "94d6f6820b57a888e4c7e78478b30250"; 
 const lat = 5.6037;
 const lon = -0.1870;
 
