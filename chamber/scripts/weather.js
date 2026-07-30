@@ -6,6 +6,8 @@ const conditionsEl = document.querySelector('#conditions');
 const descriptionEl = document.querySelector('#description');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastContainer = document.querySelector('#forecast');
+weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+weatherIcon.alt = description;
 
 const apiKey = "94d6f6820b57a888e4c7e78478b30250"; 
 const lat = 5.6037;
