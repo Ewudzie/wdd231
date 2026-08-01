@@ -226,6 +226,9 @@ main {
 .join-form {
     display: grid;
     gap: 1rem;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 .form-grid {
@@ -285,9 +288,14 @@ main {
     color: #0f2742;
 }
 
+.form-row {
+    display: grid;
+    gap: 0.35rem;
+}
+
 .form-row label {
     display: block;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0;
     font-size: 0.95rem;
     color: #13394b;
     font-weight: 600;
