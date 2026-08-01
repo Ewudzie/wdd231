@@ -66,6 +66,47 @@ nav a.active {
     background: linear-gradient(90deg, #111111 0 50%, #eeeeee 50% 100%);
 }
 
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+#primary-nav.open {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    border-radius: 12px;
+    background: #12304d;
+    box-shadow: 0 12px 30px rgba(15,39,66,0.25);
+    z-index: 40;
+}
+
+#primary-nav a {
+    width: 100%;
+    max-width: 260px;
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    margin: 0.35rem 0;
+}
+
+#primary-nav a:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+#primary-nav a.active {
+    background: #b8d7ff;
+    color: #0f2742;
+}
+
 main {
     padding: 0.75rem clamp(1rem, 8vw, 6rem) 1.5rem;
 }
@@ -142,9 +183,10 @@ main {
     line-height: 1.5;
 }
 
-h1 {
+.join-page h1 {
     margin: 0 0 1.6rem;
     font-size: clamp(1.7rem, 3vw, 2rem);
+    text-align: center;
 }
 
 .join-page {
@@ -154,6 +196,7 @@ h1 {
 .join-grid {
     display: grid;
     gap: 1.5rem;
+    align-items: stretch;
 }
 
 .application-card,
@@ -211,6 +254,11 @@ h1 {
 
 .form-submit-row {
     margin-top: 0.5rem;
+    grid-column: 1 / -1;
+}
+
+.form-submit-row .btn-primary {
+    width: 100%;
 }
 
 .btn-primary,
