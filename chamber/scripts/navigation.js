@@ -18,5 +18,7 @@ if (menuButton && primaryNav) {
                 ? "Close navigation menu"
                 : "Open navigation menu"
         );
+        // update visible icon for users (hamburger vs close)
+        menuButton.textContent = isOpen ? '✕' : '☰';
     });
 }

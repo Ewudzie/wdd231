@@ -16,14 +16,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function getSpotlightMembers(members) {
     const eligible = Array.isArray(members)
-        ? members.filter((member) => member.membershipLevel === 1 || member.membershipLevel === 2)
+        ? members.filter((member) => isSpotlightEligible(member))
         : [];
 
     if (!eligible.length) return [];
 
-    const resultCount = Math.random() < 0.5 ? 2 : 3;
+    const resultCount = Math.min(2, eligible.length);
     const shuffled = shuffleArray(eligible);
-    return shuffled.slice(0, Math.min(resultCount, shuffled.length));
+    return shuffled.slice(0, resultCount);
+}
+
+function isSpotlightEligible(member) {
+    const level = member?.membershipLevel;
+    if (typeof level === 'string') {
+        const normalized = level.trim().toLowerCase();
+        return normalized === 'gold' || normalized === 'silver';
+    }
+
+    return level === 1 || level === 2;
 }
 
 function shuffleArray(array) {
@@ -64,6 +74,12 @@ function renderSpotlights(grid, members) {
 }
 
 function getMembershipLabel(level) {
+    if (typeof level === 'string') {
+        const normalized = level.trim().toLowerCase();
+        if (normalized === 'gold') return 'Gold';
+        if (normalized === 'silver') return 'Silver';
+    }
+
     if (level === 1) return 'Gold';
     if (level === 2) return 'Silver';
     return 'Member';
