@@ -147,6 +147,128 @@ h1 {
     font-size: clamp(1.7rem, 3vw, 2rem);
 }
 
+.join-page {
+    padding-bottom: 1rem;
+}
+
+.join-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.application-card,
+.membership-panel {
+    padding: 1.5rem;
+    border-radius: 18px;
+    background-color: #f7fbff;
+    border: 1px solid #dce9f3;
+    box-shadow: 0 12px 28px rgba(15, 39, 66, 0.08);
+}
+
+.application-card h2,
+.membership-panel h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #0f2742;
+    font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+}
+
+.join-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    color: #13394b;
+    font-weight: 600;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.9rem 1rem;
+    border: 1px solid #dce9f3;
+    border-radius: 14px;
+    background-color: #ffffff;
+    color: #13394b;
+    font-size: 0.95rem;
+}
+
+.form-row textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-submit-row {
+    margin-top: 0.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: none;
+    background-color: #0f2742;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #12304d;
+}
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.15rem 1.2rem;
+    border-radius: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dce9f3;
+}
+
+.membership-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.1rem;
+    color: #0f2742;
+}
+
+.membership-card p {
+    margin: 0 0 1rem;
+    color: #556b76;
+    line-height: 1.6;
+}
+
+.btn-secondary {
+    border: none;
+    background-color: #0f2742;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #12304d;
+}
+
 .info-grid {
     display: grid;
     gap: 1rem;
@@ -645,6 +767,15 @@ footer p {
     .theme-toggle {
         width: 40px;
         height: 40px;
+    }
+
+    .join-grid {
+        grid-template-columns: 1.5fr 0.9fr;
+        align-items: start;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 

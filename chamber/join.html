@@ -39,18 +39,102 @@
             </nav>
         </header>
 
-        <main>
-            <h1>Join the TSS Chamber of Commerce</h1>
-            <section class="content-card">
-                <h2>Become a member</h2>
-                <p>Joining the TSS Chamber of Commerce gives your business access to networking events, local promotions, and community support across Accra.</p>
-                <ul>
-                    <li>Gain visibility with local members</li>
-                    <li>Attend chamber-sponsored events and workshops</li>
-                    <li>Access member-only resources and business support</li>
-                </ul>
-                <p>To get started, email us at <a href="mailto:techyss29@gmail.com">techyss29@gmail.com</a> or call <a href="tel:+233223265425426">(223) 265-425426</a>.</p>
-            </section>
+        <main class="join-page">
+            <h1>Join the Chamber</h1>
+
+            <div class="join-grid">
+                <section class="application-card">
+                    <h2>Membership Application</h2>
+                    <p>Complete your application to join the TSS Chamber of Commerce and connect with local businesses across Accra.</p>
+
+                    <form method="get" action="thankyou.html" class="join-form" aria-label="Join TSS Chamber form">
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="first-name">First Name</label>
+                                <input id="first-name" name="firstName" type="text" required placeholder="First name">
+                            </div>
+                            <div class="form-row">
+                                <label for="last-name">Last Name</label>
+                                <input id="last-name" name="lastName" type="text" required placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="title">Organizational Title</label>
+                                <input id="title" name="title" type="text" placeholder="Job title or role">
+                            </div>
+                            <div class="form-row">
+                                <label for="business">Business or Organization Name</label>
+                                <input id="business" name="business" type="text" required placeholder="Company name">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="email">Email Address</label>
+                                <input id="email" name="email" type="email" required placeholder="name@example.com">
+                            </div>
+                            <div class="form-row">
+                                <label for="phone">Mobile Phone</label>
+                                <input id="phone" name="phone" type="tel" placeholder="+233...">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="membership">Membership Level</label>
+                                <select id="membership" name="membership" required>
+                                    <option value="">Select a membership level</option>
+                                    <option value="np">NP Membership</option>
+                                    <option value="bronze">Bronze Membership</option>
+                                    <option value="silver">Silver Membership</option>
+                                    <option value="gold">Gold Membership</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="website">Website (optional)</label>
+                                <input id="website" name="website" type="url" placeholder="https://example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="description">Business or Organization Description</label>
+                            <textarea id="description" name="description" placeholder="Tell us about your organization"></textarea>
+                        </div>
+
+                        <div class="form-row form-submit-row">
+                            <button type="submit" class="btn-primary">Submit application</button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="membership-panel">
+                    <h2>Membership Levels</h2>
+                    <div class="membership-levels">
+                        <article class="membership-card">
+                            <h3>NP Membership</h3>
+                            <p>No fee for nonprofit organizations.</p>
+                            <a href="#np" class="btn-secondary">View Benefits</a>
+                        </article>
+                        <article class="membership-card">
+                            <h3>Bronze Membership</h3>
+                            <p>Basic benefits for growing businesses.</p>
+                            <a href="#bronze" class="btn-secondary">View Benefits</a>
+                        </article>
+                        <article class="membership-card">
+                            <h3>Silver Membership</h3>
+                            <p>More visibility and event discounts.</p>
+                            <a href="#silver" class="btn-secondary">View Benefits</a>
+                        </article>
+                        <article class="membership-card">
+                            <h3>Gold Membership</h3>
+                            <p>Premium promotion and special opportunities.</p>
+                            <a href="#gold" class="btn-secondary">View Benefits</a>
+                        </article>
+                    </div>
+                </aside>
+            </div>
         </main>
 
         <footer>
