@@ -324,12 +324,12 @@ main {
     grid-column: 1 / -1;
 }
 
-.form-submit-row .btn-primary {
+.form-submit-row .button-primary {
     width: 100%;
 }
 
-.btn-primary,
-.btn-secondary {
+.button-primary,
+.button-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -340,13 +340,13 @@ main {
     cursor: pointer;
 }
 
-.btn-primary {
+.button-primary {
     border: none;
     background-color: #0f2742;
     color: #ffffff;
 }
 
-.btn-primary:hover {
+.button-primary:hover {
     background-color: #12304d;
 }
 
@@ -374,13 +374,13 @@ main {
     line-height: 1.6;
 }
 
-.btn-secondary {
+.button-secondary {
     border: none;
     background-color: #0f2742;
     color: #ffffff;
 }
 
-.btn-secondary:hover {
+.button-secondary:hover {
     background-color: #12304d;
 }
 
