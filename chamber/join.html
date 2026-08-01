@@ -78,9 +78,10 @@
                             </div>
                             <div class="form-row">
                                 <label for="phone">Mobile Phone</label>
-                                <input id="phone" name="phone" type="tel" placeholder="+233...">
+                                <input id="phone" name="phone" type="tel" required placeholder="+233...">
                             </div>
                         </div>
+                        <input id="submission-date" name="submissionDate" type="hidden" value="">
 
                         <div class="form-grid">
                             <div class="form-row">
@@ -137,6 +138,15 @@
                 </aside>
             </div>
         </main>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const dateInput = document.getElementById('submission-date');
+                if (dateInput) {
+                    dateInput.value = new Date().toISOString();
+                }
+            });
+        </script>
 
         <footer>
             <div>

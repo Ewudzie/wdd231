@@ -22,6 +22,13 @@ header {
     position: relative; /* allow absolutely-positioned mobile nav */
 }
 
+.menu-button {
+    margin-left: 0;
+}
+
+.theme-toggle {
+    margin-left: 0;
+}
 .brand {
     display: flex;
     align-items: center;
@@ -224,6 +231,58 @@ main {
 .form-grid {
     display: grid;
     gap: 1rem;
+}
+
+.submission-summary {
+    padding: 1.5rem;
+    border-radius: 18px;
+    background-color: #f7fbff;
+    border: 1px solid #dce9f3;
+    box-shadow: 0 12px 28px rgba(15, 39, 66, 0.08);
+    margin-bottom: 1rem;
+}
+
+.summary-details {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.summary-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #dce9f3;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-label {
+    font-weight: 700;
+    color: #0f2742;
+}
+
+.summary-value {
+    color: #334b5c;
+    text-align: right;
+    word-break: break-word;
+}
+
+.thankyou-message {
+    margin: 0 auto 1.5rem;
+    max-width: 720px;
+    text-align: center;
+    color: #334b5c;
+}
+
+.summary-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #0f2742;
 }
 
 .form-row label {
