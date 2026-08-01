@@ -43,3 +43,87 @@
         justify-self: end;
     }
 }
+
+@media (min-width:821px){
+
+
+header {
+
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+
+/* hide hamburger */
+
+.menu-button {
+
+    display:none;
+
+}
+
+
+/* desktop navigation */
+
+#primary-nav {
+
+    display:flex !important;
+
+    flex-direction:row;
+
+    align-items:center;
+
+    gap:1rem;
+
+    width:auto;
+
+    background:none;
+
+}
+
+
+#primary-nav a {
+
+    padding:.5rem 1rem;
+
+}
+
+
+/* keep theme button visible */
+
+.theme-toggle {
+
+    display:block;
+
+}
+
+
+.business-grid {
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+.info-grid {
+
+    grid-template-columns:1.2fr .8fr;
+
+}
+
+
+.spotlight-grid {
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+footer {
+
+    grid-template-columns:1fr auto 1fr;
+
+}
+
+}

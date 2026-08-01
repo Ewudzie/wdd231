@@ -543,3 +543,87 @@ footer p {
         height: 82px;
     }
 }
+
+/* HEADER */
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#12304d;
+    padding:1rem;
+}
+
+
+.brand {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    color:white;
+    text-decoration:none;
+    font-size:1.5rem;
+}
+
+
+.brand-image {
+    width:64px;
+    height:64px;
+}
+
+
+/* HAMBURGER */
+
+.menu-button {
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+
+/* MOBILE NAV */
+
+#primary-nav {
+
+    display:none;
+
+    flex-direction:column;
+    width:100%;
+    background:#12304d;
+
+}
+
+
+#primary-nav.open {
+
+    display:flex;
+
+}
+
+
+#primary-nav a {
+
+    color:white;
+    text-decoration:none;
+    padding:1rem;
+    text-align:center;
+
+}
+
+
+#primary-nav a:hover,
+#primary-nav .active {
+
+    background:#1e5a8a;
+
+}
+
+
+.theme-toggle {
+
+    width:40px;
+    height:40px;
+
+}
