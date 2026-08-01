@@ -52,33 +52,33 @@
                         <div class="form-grid">
                             <div class="form-row">
                                 <label for="first-name">First Name</label>
-                                <input id="first-name" name="firstName" type="text" required placeholder="First name">
+                                <input id="first-name" name="firstName" type="text" required placeholder="First name" autocomplete="given-name" title="Enter your first name">
                             </div>
                             <div class="form-row">
                                 <label for="last-name">Last Name</label>
-                                <input id="last-name" name="lastName" type="text" required placeholder="Last name">
+                                <input id="last-name" name="lastName" type="text" required placeholder="Last name" autocomplete="family-name" title="Enter your last name">
                             </div>
                         </div>
 
                         <div class="form-grid">
                             <div class="form-row">
                                 <label for="title">Organizational Title</label>
-                                <input id="title" name="title" type="text" placeholder="Job title or role">
+                                <input id="title" name="title" type="text" placeholder="Job title or role" autocomplete="organization-title" title="Enter your organizational title">
                             </div>
                             <div class="form-row">
                                 <label for="business">Business or Organization Name</label>
-                                <input id="business" name="business" type="text" required placeholder="Company name">
+                                <input id="business" name="business" type="text" required placeholder="Company name" autocomplete="organization" title="Enter your business or organization name">
                             </div>
                         </div>
 
                         <div class="form-grid">
                             <div class="form-row">
                                 <label for="email">Email Address</label>
-                                <input id="email" name="email" type="email" required placeholder="name@example.com">
+                                <input id="email" name="email" type="email" required placeholder="name@example.com" autocomplete="email" title="Enter your email address">
                             </div>
                             <div class="form-row">
                                 <label for="phone">Mobile Phone</label>
-                                <input id="phone" name="phone" type="tel" required placeholder="+233...">
+                                <input id="phone" name="phone" type="tel" required placeholder="+233..." autocomplete="tel-national" title="Enter your mobile phone number">
                             </div>
                         </div>
                         <input id="submission-date" name="submissionDate" type="hidden" value="">
@@ -96,13 +96,13 @@
                             </div>
                             <div class="form-row">
                                 <label for="website">Website (optional)</label>
-                                <input id="website" name="website" type="url" placeholder="https://example.com">
+                                <input id="website" name="website" type="url" placeholder="https://example.com" autocomplete="url" title="Enter your website URL">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <label for="description">Business or Organization Description</label>
-                            <textarea id="description" name="description" placeholder="Tell us about your organization"></textarea>
+                            <textarea id="description" name="description" placeholder="Tell us about your organization" title="Describe your business or organization"></textarea>
                         </div>
 
                         <div class="form-row form-submit-row">
