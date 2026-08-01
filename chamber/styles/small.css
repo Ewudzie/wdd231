@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     padding: 1.5rem clamp(1rem, 8vw, 6rem);
     background-color: #0f2742;
+    position: relative; /* allow absolutely-positioned mobile nav */
 }
 
 .brand {
@@ -588,32 +589,57 @@ footer p {
         display: block;
         background: none;
         border: none;
-        color: white;
-        font-size: 2rem;
+        color: #0f2742;
+        font-size: 1.4rem;
         cursor: pointer;
+        padding: 0.45rem 0.6rem;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(15,39,66,0.12);
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    /* mobile panel nav that appears under the header when open */
     #primary-nav {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background: #12304d;
+        width: auto;
+        background: transparent;
     }
 
     #primary-nav.open {
         display: flex;
+        position: absolute;
+        left: 1.25rem;
+        right: 1.25rem;
+        top: calc(100% - 0.5rem);
+        padding: 1.25rem;
+        border-radius: 12px;
+        background: #12304d; /* existing dark blue */
+        box-shadow: 0 12px 30px rgba(15,39,66,0.25);
+        z-index: 40;
     }
 
     #primary-nav a {
         color: white;
         text-decoration: none;
-        padding: 1rem;
+        padding: 0.9rem 1rem;
         text-align: center;
+        display: block;
+        border-radius: 8px;
+        margin: 0.35rem 0;
     }
 
-    #primary-nav a:hover,
-    #primary-nav .active {
-        background: #1e5a8a;
+    /* keep hover and active states but use a light highlight for the active item */
+    #primary-nav a:hover {
+        background: rgba(255,255,255,0.06);
+    }
+
+    #primary-nav a.active {
+        background: #b8d7ff; /* pale blue highlight */
+        color: #0f2742;
     }
 
     .theme-toggle {
