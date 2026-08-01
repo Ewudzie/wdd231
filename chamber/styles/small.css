@@ -24,6 +24,7 @@ header {
 
 .menu-button {
     margin-left: 0;
+    color: #ffffff;
 }
 
 .brand {
@@ -807,7 +808,7 @@ footer p {
         display: block;
         background: none;
         border: none;
-        color: #0f2742;
+        color: #ffffff;
         font-size: 1.4rem;
         cursor: pointer;
         padding: 0.45rem 0.6rem;
