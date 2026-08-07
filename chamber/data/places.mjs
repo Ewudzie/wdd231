@@ -5,7 +5,7 @@ export const places = [
     "category": "Beach",
     "address": "Labadi Road, Accra, Greater Accra, Ghana",
     "description": "Accra's most popular beach featuring live music, horseback riding, local food vendors, and weekend entertainment.",
-    "image": "images/labadi_beach.jpg"
+    "image": "images/labadi_beach.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ export const places = [
     "category": "Historical",
     "address": "High Street, Opposite the Supreme Court, Accra, Ghana",
     "description": "A national monument dedicated to Ghana's first President featuring a museum, mausoleum, fountains, and beautiful gardens.",
-    "image": "images/kwame_nkrumah.jpg"
+    "image": "images/kwame_nkrumah.webp"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ export const places = [
     "category": "Nature",
     "address": "Haatso-Atomic Road, University of Ghana, Legon, Accra",
     "description": "A recreational park offering zip-lining, canopy walk, cycling, picnic grounds, and children's activities.",
-    "image": "images/legon_botanical.jpg"
+    "image": "images/legon_botanical.webp"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@ export const places = [
     "category": "Shopping",
     "address": "Oxford Street, Osu, Accra, Ghana",
     "description": "A vibrant commercial street known for shopping, restaurants, cafés, nightlife, and entertainment.",
-    "image": "images/oxford_st_osu.jpg"
+    "image": "images/oxford_st_osu.webp"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@ export const places = [
     "category": "Shopping Mall",
     "address": "Plot C11, Tetteh Quarshie Interchange, Spintex Road, Accra",
     "description": "A modern shopping mall featuring retail stores, restaurants, cafés, a supermarket, and a cinema.",
-    "image": "images/accra_mall.jpg"
+    "image": "images/accra_mall.webp"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@ export const places = [
     "category": "Historical",
     "address": "Independence Avenue, Accra, Ghana",
     "description": "An iconic national square where Ghana celebrates Independence Day and hosts important national events.",
-    "image": "images/black_star_sqr.jpg"
+    "image": "images/black_star_sqr.webp"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@ export const places = [
     "category": "Beach",
     "address": "Bojo Beach Road, Accra, Greater Accra, Ghana",
     "description": "A peaceful beach accessed by a short canoe ride across a lagoon, perfect for family outings and relaxation.",
-    "image": "images/bojo_beach.jpg"
+    "image": "images/bojo_beach.webp"
   },
   {
     "id": 8,
@@ -61,6 +61,6 @@ export const places = [
     "category": "Museum",
     "address": "Barnes Road, Adabraka, Accra, Ghana",
     "description": "The largest museum in Ghana, showcasing archaeology, ethnography, traditional art, and historical artifacts.",
-    "image": "images/national_museum.jpg"
+    "image": "images/national_museum.webp"
   }
 ]
