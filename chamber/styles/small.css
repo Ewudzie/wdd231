@@ -117,6 +117,85 @@ main {
     padding: 0.75rem clamp(1rem, 8vw, 6rem) 1.5rem;
 }
 
+#places {
+    margin-top: 1.5rem;
+}
+
+#places-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.place-card {
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #f7fbff;
+    border: 1px solid #dce9f3;
+    box-shadow: 0 8px 24px rgba(15, 39, 66, 0.06);
+}
+
+.place-card:nth-child(1) { grid-area: card1; }
+.place-card:nth-child(2) { grid-area: card2; }
+.place-card:nth-child(3) { grid-area: card3; }
+.place-card:nth-child(4) { grid-area: card4; }
+.place-card:nth-child(5) { grid-area: card5; }
+.place-card:nth-child(6) { grid-area: card6; }
+.place-card:nth-child(7) { grid-area: card7; }
+.place-card:nth-child(8) { grid-area: card8; }
+
+.place-card h2 {
+    margin: 0 0 0.75rem;
+    color: #0f2742;
+    font-size: 1.1rem;
+}
+
+.place-card figure {
+    margin: 0 0 0.75rem;
+}
+
+.place-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.place-card address {
+    margin-bottom: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #0f2742;
+}
+
+.place-card p {
+    margin: 0 0 0.9rem;
+    color: #334b5c;
+    line-height: 1.55;
+}
+
+.place-card button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1rem;
+    background-color: #0f2742;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.place-card button:hover {
+    background-color: #12304d;
+}
+
 .hero {
     position: relative;
     display: grid;
@@ -255,7 +334,7 @@ main {
 .summary-value {
     color: #334b5c;
     text-align: right;
-    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .thankyou-message {
