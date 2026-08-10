@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Edwin Kobina Ewudzie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Techy Solution and Services to request IT support, products, installation, or a project quotation.">
+    <title>Contact | Techy Solution and Services</title>
+    <link rel="icon" href="images/tss-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/tss.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Techy Solution and Services home">
+            <img src="images/tss-logo.svg" alt="TSS logo" width="54" height="54">
+            <span><strong>Techy Solution</strong><small>and Services</small></span>
+        </a>
+        <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Contact</p>
+            <h1>Request support or a quotation.</h1>
+            <p>Tell TSS what you need, and we will help you plan the right equipment, installation, or support service.</p>
+        </section>
+
+        <section class="section contact-section">
+            <div>
+                <h2>Business information</h2>
+                <address>
+                    <strong>Techy Solution and Services</strong><br>
+                    Accra, Ghana<br>
+                    <a href="mailto:info@techysolutionsgh.com">info@techysolutionsgh.com</a>
+                </address>
+                <p>
+                    Use the form to request CCTV installation, networking support,
+                    computer maintenance, IT equipment, or consultancy.
+                </p>
+            </div>
+
+            <form class="quote-form" action="#" method="get">
+                <label>
+                    Full Name
+                    <input type="text" name="name" required autocomplete="name">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required autocomplete="email">
+                </label>
+                <label>
+                    Service Needed
+                    <select name="service" required>
+                        <option value="">Select a service</option>
+                        <option>CCTV installation</option>
+                        <option>Network setup</option>
+                        <option>Computer support</option>
+                        <option>IT equipment purchase</option>
+                        <option>IT consultancy</option>
+                    </select>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="button primary" type="submit">Send Request</button>
+                <p class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Techy Solution and Services (TSS)</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

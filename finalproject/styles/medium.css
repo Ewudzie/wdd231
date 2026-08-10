@@ -1,0 +1,45 @@
+@media screen and (min-width: 641px) {
+    .site-header {
+        padding: 0.85rem 2rem;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .page-hero,
+    .section {
+        padding: 4rem 2rem;
+    }
+
+    h1 {
+        font-size: 3.35rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .card-grid,
+    .product-list,
+    .summary-grid,
+    .value-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .site-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+}

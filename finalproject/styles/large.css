@@ -1,0 +1,74 @@
+@media screen and (min-width: 901px) {
+    .site-header {
+        padding: 0.85rem 4rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .primary-nav a {
+        padding: 0.65rem 0.85rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+        gap: 4rem;
+        min-height: 72vh;
+        padding: 6rem 4rem;
+        background:
+            linear-gradient(115deg, rgba(6, 52, 95, 0.95), rgba(18, 103, 168, 0.82)),
+            url("../images/tss-logo.svg") right 7% center / min(38vw, 390px) no-repeat,
+            var(--navy);
+    }
+
+    .page-hero,
+    .section {
+        padding: 5rem 4rem;
+    }
+
+    h1 {
+        font-size: 4.9rem;
+        line-height: 1.02;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .service-card {
+        min-height: 420px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .split-section,
+    .contact-section {
+        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+        gap: 4rem;
+    }
+
+    .site-footer {
+        padding: 1.5rem 4rem;
+    }
+}

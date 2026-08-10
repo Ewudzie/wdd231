@@ -1,0 +1,139 @@
+{
+  "company": "Techy Solution and Services (TSS)",
+  "section": "IT Services",
+  "services": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "CCTV Camera Sales and Installation",
+      "slug": "cctv-camera-sales-installation",
+      "description": "Security camera supply, installation, DVR/NVR setup, cabling, and monitoring configuration.",
+      "image": "images/cctv-installation.webp",
+      "alt": "CCTV security camera installation",
+      "keywords": [
+        "CCTV",
+        "security camera",
+        "surveillance",
+        "DVR",
+        "NVR",
+        "installation"
+      ]
+    },
+    {
+      "id": 2,
+      "number": "02",
+      "title": "Network Installation and Configuration",
+      "slug": "network-installation-configuration",
+      "description": "Router setup, switches, wireless access points, structured cabling, and network troubleshooting.",
+      "image": "images/network-installation.webp",
+      "alt": "Network installation with cables, switches, and server equipment",
+      "keywords": [
+        "networking",
+        "router",
+        "switch",
+        "Ethernet",
+        "structured cabling",
+        "LAN"
+      ]
+    },
+    {
+      "id": 3,
+      "number": "03",
+      "title": "Wi-Fi Setup and Optimization",
+      "slug": "wifi-setup-optimization",
+      "description": "Better coverage, secure passwords, access point placement, and performance improvements.",
+      "image": "images/wifi-setup.webp",
+      "alt": "Wi-Fi router and wireless network setup",
+      "keywords": [
+        "Wi-Fi",
+        "wireless",
+        "router",
+        "access point",
+        "coverage",
+        "optimization"
+      ]
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "title": "Computer Repairs and Maintenance",
+      "slug": "computer-repairs-maintenance",
+      "description": "Hardware repairs, desktop and laptop maintenance, software installation, and system tune-ups.",
+      "image": "images/computer-maintenance.webp",
+      "alt": "Technician repairing a laptop and desktop computer",
+      "keywords": [
+        "computer repair",
+        "laptop repair",
+        "desktop repair",
+        "hardware",
+        "software",
+        "maintenance"
+      ]
+    },
+    {
+      "id": 5,
+      "number": "05",
+      "title": "Data Backup and Recovery",
+      "slug": "data-backup-recovery",
+      "description": "Backup planning, file recovery support, storage setup, and protection against data loss.",
+      "image": "images/data-backup.webp",
+      "alt": "Data backup and recovery servers with cloud storage",
+      "keywords": [
+        "data backup",
+        "data recovery",
+        "cloud backup",
+        "storage",
+        "disaster recovery"
+      ]
+    },
+    {
+      "id": 6,
+      "number": "06",
+      "title": "IT Consultancy",
+      "slug": "it-consultancy",
+      "description": "Practical recommendations for equipment purchases, security, upgrades, and project planning.",
+      "image": "images/it-consultancy.webp",
+      "alt": "IT consultant discussing technology and project planning",
+      "keywords": [
+        "IT consulting",
+        "technology",
+        "IT strategy",
+        "security",
+        "upgrades",
+        "project planning"
+      ]
+    },
+    {
+      "id": 7,
+      "number": "07",
+      "title": "Printer Installation",
+      "slug": "printer-installation",
+      "description": "Printer setup, driver installation, sharing configuration, and basic troubleshooting.",
+      "image": "images/printer-installation.webp",
+      "alt": "Office technicians installing computers and printers",
+      "keywords": [
+        "printer",
+        "printer installation",
+        "drivers",
+        "printer sharing",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": 8,
+      "number": "08",
+      "title": "Preventive Maintenance",
+      "slug": "preventive-maintenance",
+      "description": "Scheduled checks that help reduce downtime and extend the life of your technology.",
+      "image": "images/preventive-maintenance.webp",
+      "alt": "IT technician performing preventive computer maintenance",
+      "keywords": [
+        "preventive maintenance",
+        "computer maintenance",
+        "technician",
+        "system checks",
+        "IT support"
+      ]
+    }
+  ]
+}

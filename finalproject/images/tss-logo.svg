@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" role="img" aria-labelledby="title desc">
+    <title id="title">TSS logo</title>
+    <desc id="desc">TSS logo with a blue background, IT icon, divider line, and tagline For all Your IT Solutions.</desc>
+    <rect width="220" height="180" fill="#0d4f7f"/>
+
+    <g transform="translate(35 60)" fill="none" stroke="#d78a99" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="0" y="0" width="25" height="33" rx="11"/>
+        <path d="M12.5 0v11"/>
+        <path d="M6 16h13"/>
+        <path d="M12.5 16v15"/>
+        <circle cx="12.5" cy="7" r="3"/>
+        <path d="M3 34h19"/>
+    </g>
+
+    <line x1="77" y1="56" x2="77" y2="103" stroke="#ffffff" stroke-width="2"/>
+
+    <text x="90" y="91"
+          fill="#ffffff"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="47"
+          font-weight="700">TSS</text>
+
+    <text x="42" y="124"
+          fill="#ffffff"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="12"
+          font-weight="700"
+          letter-spacing="0.6">For all Your IT Solutions</text>
+</svg>
