@@ -4,7 +4,7 @@
     }
 
     .hero {
-        padding: 4rem 2rem;
+        padding: 3rem 2rem 0;
     }
 
     .page-hero,
@@ -16,6 +16,14 @@
         font-size: 3.35rem;
     }
 
+    .hero-logo-mark {
+        font-size: 3.3rem;
+    }
+
+    .hero-logo-text {
+        font-size: 1.05rem;
+    }
+
     h2 {
         font-size: 2.2rem;
     }
@@ -23,6 +31,16 @@
     .hero-actions {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .hero-service-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hero-feature-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 -2rem;
+        padding: 1rem 2rem;
     }
 
     .button {

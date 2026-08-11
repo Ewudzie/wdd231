@@ -22,14 +22,21 @@
     }
 
     .hero {
-        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-        gap: 4rem;
-        min-height: 72vh;
-        padding: 6rem 4rem;
+        grid-template-columns: 1fr;
+        min-height: calc(100vh - 75px);
+        padding: 4rem 4rem 0;
         background:
-            linear-gradient(115deg, rgba(6, 52, 95, 0.95), rgba(18, 103, 168, 0.82)),
-            url("../images/tss-logo.svg") right 7% center / min(38vw, 390px) no-repeat,
+            linear-gradient(90deg, rgba(3, 19, 34, 0.97) 0%, rgba(5, 38, 68, 0.9) 37%, rgba(5, 50, 86, 0.45) 66%, rgba(5, 50, 86, 0.08) 100%),
+            url("../images/tss-homepage-hero.webp") center right / cover no-repeat,
             var(--navy);
+    }
+
+    .hero-content {
+        max-width: 760px;
+    }
+
+    .hero-logo-lockup {
+        margin-bottom: 3rem;
     }
 
     .page-hero,
@@ -38,8 +45,49 @@
     }
 
     h1 {
-        font-size: 4.9rem;
+        font-size: 4.45rem;
         line-height: 1.02;
+    }
+
+    .hero p:not(.eyebrow) {
+        font-size: 1.35rem;
+    }
+
+    .hero-service-row {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        margin-top: 3rem;
+    }
+
+    .hero-service-row div {
+        min-height: 92px;
+        padding: 0 1rem;
+        border-top: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+        text-align: center;
+    }
+
+    .hero-service-row div:first-child {
+        padding-left: 0;
+    }
+
+    .hero-service-row div:last-child {
+        border-right: 0;
+    }
+
+    .hero-feature-bar {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin: 0 -4rem;
+        padding: 1rem 4rem;
+    }
+
+    .hero-feature-bar div {
+        justify-content: center;
+        border-right: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .hero-feature-bar div:last-child {
+        border-right: 0;
     }
 
     h2 {
