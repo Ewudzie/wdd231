@@ -106,25 +106,66 @@
             </div>
         </section>
 
-        <article class="info-card weather-card" id="weather">
-            <h2>Current Weather</h2>
-            <div class="weather-current">
-                <img id="weather-icon" src="images/weather-placeholder.jpg" alt="Weather icon" class="weather-icon" loading="lazy" width="64" height="64">
-                <p id="description">Loading weather description...</p>
+        <section class="section weather-section" id="weather">
+            <div class="section-heading">
+                <p class="eyebrow">Weather Update</p>
+                <h2>Weather in Accra</h2>
             </div>
-            <div class="weather-info">
-                <p><span class="label">Temperature</span><span id="temperature">24°C</span></p>
-                <p><span class="label">Humidity</span><span id="humidity">78%</span></p>
-                <p><span class="label">Wind Speed</span><span id="wind-speed">12 km/h</span></p>
-                <p><span class="label">Conditions</span><span id="conditions">Partly Cloudy</span></p>
+
+            <div class="weather-layout">
+
+                <!-- Current Weather -->
+                <article class="info-card weather-current-card">
+                    <h3>Current Weather</h3>
+
+                    <div class="weather-current">
+                        <img
+                            id="weather-icon"
+                            src="images/weather-placeholder.jpg"
+                            alt="Weather icon"
+                            class="weather-icon"
+                            loading="lazy"
+                            width="64"
+                            height="64"
+                        >
+
+                        <p id="description">Loading weather description...</p>
+                    </div>
+
+                    <div class="weather-info">
+                        <p>
+                            <span class="label">Temperature</span>
+                            <span id="temperature">24°C</span>
+                        </p>
+
+                        <p>
+                            <span class="label">Humidity</span>
+                            <span id="humidity">78%</span>
+                        </p>
+
+                        <p>
+                            <span class="label">Wind Speed</span>
+                            <span id="wind-speed">12 km/h</span>
+                        </p>
+
+                        <p>
+                            <span class="label">Conditions</span>
+                            <span id="conditions">Partly Cloudy</span>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 3-Day Forecast -->
+                <article class="info-card forecast-card">
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="forecast" class="forecast-grid">
+                        <p class="forecast-loading">Loading forecast...</p>
+                    </div>
+                </article>
+
             </div>
-            <div class="forecast-section">
-                <h3>3-Day Forecast</h3>
-                <div id="forecast" class="forecast-grid">
-                    <p class="forecast-loading">Loading forecast...</p>
-                </div>
-            </div>
-        </article>
+        </section>
     </main>
 
     <footer class="site-footer">

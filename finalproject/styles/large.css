@@ -119,4 +119,53 @@
     .site-footer {
         padding: 1.5rem 4rem;
     }
+
+    /* =========================================
+        WEATHER - DESKTOP
+        ========================================= */
+
+    .weather-section {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .weather-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .weather-current-card,
+    .forecast-card {
+        min-height: 0;
+        padding: 1.5rem;
+    }
+
+    .weather-current-card h3,
+    .forecast-card h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .weather-current-card .weather-current {
+    min-height: 90px;
+    }
+
+    .forecast-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .forecast-day {
+        min-height: 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+    }
+
+     
 }

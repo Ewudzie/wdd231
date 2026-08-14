@@ -60,4 +60,14 @@
         justify-content: space-between;
         padding: 1.5rem 2rem;
     }
+
+        /* Weather */
+    .weather-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
