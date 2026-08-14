@@ -55,10 +55,22 @@
     }
 
     .site-footer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 1.5rem 2rem;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 1.5rem;
+        padding: 1.25rem 2rem;
+        text-align: initial;
+    }
+
+    .footer-copyright {
+        justify-self: start;
+    }
+
+    .social-links {
+        justify-self: center;
+    }
+
+    .footer-modified {
+        justify-self: end;
     }
 
         /* Weather */

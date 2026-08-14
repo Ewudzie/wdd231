@@ -117,8 +117,22 @@
     }
 
     .site-footer {
-        padding: 1.5rem 4rem;
+        grid-template-columns: 1fr auto 1fr;
+        min-height: 88px;
+        padding: 1.25rem 4rem;
     }
+
+    .footer-copyright {
+        justify-self: start;
+    }
+
+    .social-links {
+        justify-self: center;
+    }
+
+    .footer-modified {
+        justify-self: end;
+    } 
 
     /* =========================================
         WEATHER - DESKTOP
